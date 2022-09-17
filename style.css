@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Flamenco';font-size: 22px;
+}
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)), url('../image/gyming\ photo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 30px;
+    clear: both;
+}
+
+.row{
+    max-width:  1180px;
+    margin: -30px auto;
+}
+
+.logo{
+    height: 180px;
+    width:auto;
+    float: left;
+    margin-top: 0px;  
+}
+
+.main-naw{
+    float: right;
+    margin-top: 60px;
+}
+
+.main-naw li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;   
+}
+
+.main-naw li a{
+    padding: 5px 0;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100px;    
+}  
+
+.main-naw li a:hover{
+    border-bottom: 2px solid #bf55ec;
+}
+
+.main-contant-header{
+    width: 1180px;
+    position: sticky;
+    top: 50%;
+    left: 50%;
+  transform: (-50%,-50%);
+
+}
+
+h1{
+    color:#fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin: bottom 20px;
+    text-transform: uppercase;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-colour 0.2s, border 0.2s, colour 0.2;
+}
+
+.btn-full{
+    background-color: transparent;
+    color: #bf55ec;
+    margin-right: 15px;
+    border: 1px solid #bf55ec
+}
+
+.btn-full:hover{
+    background-color: #fff;
+
+}
+
+.btn-naw{
+    background-color: transparent;
+    color:#fff;
+    margin-left: 15px;
+    border: 1px solid #fff;
+}
+
+.btn-naw:hover{
+    background-color: #bf55ec;
+}
+
+.colorchange{
+    animation: colorchangeto 1s infinite;     
+}
+
+@keyframes colorchangeto{
+     0%{color: red;}
+     26%{color: #bf55ec; ;}
+     50%{color: #fff; }
+     100%{color: #bf55ec; }
+     }
+
+ /*////// responsive queries/////*/
+ 
+ @media only screen and (max-width: 1180px){
+    .main-content-header{
+        width: 100%;
+        padding: 0 2%;
+    }
+ }
+ 
+ @media only screen and (max-width: 998px){
+    h1{font-size: 200%;}
+ }
+
+ @media only screen and (max-width: 700px){
+    h1{font-size: 150%;}
+ }    
+
+ @media only screen and (max-width: 549px){
+    h1{font-size: 120%;}
+ }  
+ 
+ 
